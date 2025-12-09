@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - Kino Beans</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Form Pembayaran</h1>
+      <p>Total: <span id="payment-total"></span></p>
+
+      <form id="payment-form">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Nomor HP</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <h3>Pilih Metode Pembayaran</h3>
+        <div>
+          <input
+            type="radio"
+            id="qris"
+            name="payment-method"
+            value="QRIS"
+            required
+          />
+          <label for="qris">QRIS (DANA, ShopeePay, GoPay)</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="bank"
+            name="payment-method"
+            value="Bank"
+            required
+          />
+          <label for="bank">Transfer Bank</label>
+        </div>
+
+        <button type="submit">Bayar Sekarang</button>
+      </form>
+    </main>
+
+    <script>
+      // Ambil total harga dari localStorage
+      const total = localStorage.getItem("totalPrice") || 0;
+      document.getElementById("payment-total").innerText = `Rp${Number(
+        total
+      ).toLocaleString("id-ID")}`;
+
+      document
+        .getElementById("payment-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
+          const method = document.querySelector(
+            'input[name="payment-method"]:checked'
+          ).value;
+
+          alert(
+            `Terima kasih ${name}! Total pembayaran ${
+              document.getElementById("payment-total").innerText
+            } melalui ${method}.`
+          );
+          // Di sini nanti bisa dialihkan ke page konfirmasi / QR code e-wallet
+        });
+    </script>
+  </body>
+</html>

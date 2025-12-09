@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kino Beans</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <i data-feather="coffee"></i> Kino <span>Beans</span>
+      </a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Product</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About us</a>
+        <a href="#contact">contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        <a href="#" id="map-pin"><i data-feather="map-pin"></i></a>
+        <a href="#" id="image"><i data-feather="image"></i></a>
+      </div>
+
+      <!-- Search form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+
+        <ul class="search-suggestions"></ul>
+      </div>
+
+      <!-- Search form end -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <main class="content">
+       <h1 class="hero-title">
+  <span id="typewriter" class="typewriter">
+</h1>
+</section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <h2>Menu</h2>
+      <p>Pilih racikan terbaik untuk hari kamu ☕</p>
+    </section>
+
+    <div class="menu-container">
+      <div class="menu-category">
+        <img src="menu/Kopi.jpg" alt="Coffee" />
+        <h3>Coffee</h3>
+        <a href="coffee.html" class="lihat-btn">Lihat Selengkapnya</a>
+      </div>
+      <div class="menu-category">
+        <img src="menu/non-kopi.jpg" alt="Non Coffee" />
+        <h3>Non Coffee</h3>
+        <a href="noncoffee.html" class="lihat-btn">Lihat Selengkapnya</a>
+      </div>
+      <div class="menu-category">
+        <img src="menu/snack.jpg" alt="Snack" />
+        <h3>Snack</h3>
+        <a href="snack.html" class="lihat-btn">Lihat Selengkapnya</a>
+      </div>
+    </div>
+
+    <!-- produk section start-->
+    <section class="products" id="products">
+      <h2><span>Beans</span> Product</h2>
+      <p>
+        Temukan biji kopi pilihanmu dan nikmati cita rasa terbaik di setiap
+        seduhan.
+      </p>
+
+      <div class="row">
+        <!-- PRODUK 1 -->
+        <div class="product-card">
+          <!-- FOTO -->
+          <div class="product-image">
+            <img src="img/products/produk 1.jpg" alt="" />
+          </div>
+
+          <!-- NAMA PRODUK -->
+          <h3>Arabica Beans</h3>
+
+          <!-- BINTANG -->
+          <div class="product-start">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+          </div>
+
+          <!-- HARGA -->
+          <div class="product-price">IDR 30.000 <span>IDR 50.000</span></div>
+
+          <!-- ICON EYE -->
+          <div class="product-icon">
+            <a href="#" class="item-detail-button" data-modal="arabica-modal">
+              <i data-feather="info"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUK 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/products/produk 2.jpg" alt="" />
+          </div>
+
+          <h3>Robusta Beans</h3>
+
+          <div class="product-start">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+          </div>
+
+          <div class="product-price">IDR 30.000 <span>IDR 50.000</span></div>
+
+          <div class="product-icon">
+            <a href="#" class="item-detail-button" data-modal="robusta-modal">
+              <i data-feather="info"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUK 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/products/produk 1.jpg" alt="" />
+          </div>
+
+          <h3>Liberica Beans</h3>
+
+          <div class="product-start">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+          </div>
+
+          <div class="product-price">IDR 30.000 <span>IDR 50.000</span></div>
+
+          <div class="product-icon">
+            <a href="#" class="item-detail-button" data-modal="liberica-modal">
+              <i data-feather="info"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- PRODUK 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img/products/produk 2.jpg" alt="" />
+          </div>
+
+          <h3>Excelsa Beans</h3>
+
+          <div class="product-start">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+          </div>
+
+          <div class="product-price">IDR 30.000 <span>IDR 50.000</span></div>
+
+          <div class="product-icon">
+            <a href="#" class="item-detail-button" data-modal="excelsa-modal">
+              <i data-feather="info"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- produk section end-->
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <h2>Gallery</h2>
+      <div class="divider"></div>
+      <p class="subtitle">Potongan hangat dari suasana tenang di Kino Beans.</p>
+
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="gallery/gal 1.jpg" alt="Coffee art" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 2.jpg" alt="Pastry" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 3.jpg" alt="Barista" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 4.jpg" alt="Corner table" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 5.jpg" alt="Drip coffee" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 6.jpg" alt="Drip coffee" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 7.jpg" alt="Drip coffee" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 8.jpg" alt="Drip coffee" />
+        </div>
+        <div class="gallery-item">
+          <img src="gallery/gal 9.jpg" alt="Drip coffee" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About section start -->
+    <section id="about" class="about">
+      <h2><span>About</span> us</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang kami.jpeg" alt="Tentang Kami" width="300" />
+        </div>
+        <div class="content">
+          <p>
+            Kino Beans lahir dari ketenangan — tempat di mana setiap tegukan
+            kopi membawa rasa damai dan seimbang. Kami percaya bahwa kopi bukan
+            sekadar minuman, tapi cara sederhana untuk menikmati momen kecil
+            dalam hidup.
+          </p>
+          <p>
+            Dengan biji pilihan, proses yang lembut, dan suasana yang hangat,
+            kami ingin setiap cangkir yang kamu nikmati di Kino Beans terasa
+            personal. Karena keseimbangan dan ketulusan adalah bahan utama dari
+            setiap seduhan kami.
+          </p>
+          <p class="signature">
+            ☕ Kino Beans — brewed in balance, crafted with calm.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!---Contact Section start-->
+    <section id="contact" class="contact">
+      <h2>contact</h2>
+      <p>
+        Punya pertanyaan, saran, atau sekadar ingin ngobrol santai? Hubungi kami
+        lewat Instagram atau WhatsApp, dan mari berbagi cerita hangat sambil
+        menyeruput kopi. Kino Beans selalu terbuka untuk setiap perbincangan
+        ringan ☕
+      </p>
+<div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3966.413756292046!2d106.6388377793457!3d-6.209031699999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbuaran%20pln!5e0!3m2!1sid!2sid!4v1762782959514!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        >
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" ></iframe
+        >
+        <form action="">
+          <div class="input-grup">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-grup">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-grup">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+    <!---Contact Section end-->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">kontak</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="#">ell</a> &copy; 2025.</p>
+        <p class="note">
+          Beberapa foto diambil dari Pinterest dan tidak digunakan untuk tujuan
+          bisnis.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+
+    <!-- Modal Arabica -->
+    <div class="modal" id="arabica-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/produk 1.jpg" alt="Arabica Beans" />
+          <div class="product-content">
+            <h3>Arabica Beans</h3>
+            <p>
+              Kopi Arabica memiliki cita rasa paling kompleks dengan tingkat
+              keasaman yang lebih tinggi dan aroma yang wangi. Karakternya
+              halus, ringan, dan sering menampilkan rasa fruity atau floral. Cocok digunakan untuk: V60, Kalita, Aeropress, Cold Brew, serta espresso dengan karakter ringan seperti latte atau flat white.
+            </p>
+            <div class="product-star">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 30.000 <span>IDR 55.000</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Robusta -->
+    <div class="modal" id="robusta-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/produk 2.jpg" alt="Robusta Beans" />
+          <div class="product-content">
+            <h3>Robusta Beans</h3>
+            <p>
+              Kopi Robusta memiliki rasa lebih pahit dan body yang lebih tebal
+              dengan kadar kafein tinggi. Karakternya bold dan earthy, cocok
+              untuk menu kopi susu (termasuk aren/gula merah), espresso kuat, dan cappuccino.
+            </p>
+            <div class="product-star">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 30.000 <span>IDR 55.000</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Liberica -->
+    <div class="modal" id="liberica-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/produk 1.jpg" alt="Liberica Beans" />
+          <div class="product-content">
+            <h3>Liberica Beans</h3>
+            <p>
+              Kopi Liberica memiliki aroma dan rasa yang unik dengan karakter
+              woody dan smoky, cocok bagi penikmat rasa eksotis yang berbeda dari varian lain.
+Cocok digunakan untuk: manual brew, single origin espresso, dan campuran blend dengan karakter khas.
+            </p>
+            <div class="product-star">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 30.000 <span>IDR 55.000</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Excelsa -->
+    <div class="modal" id="excelsa-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/produk 2.jpg" alt="Excelsa Beans" />
+          <div class="product-content">
+            <h3>Excelsa Beans</h3>
+            <p>Kopi Excelsa memiliki karakter fruity, tart, dan sedikit floral dengan sensasi rasa yang hidup. Sering memberikan dimensi tambahan pada profil kopi.
+Cocok digunakan untuk: cold brew segar, manual brew, serta blend untuk menambah kompleksitas rasa.
+            </p>
+            <div class="product-star">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 30.000 <span>IDR 55.000</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/scrt.js"></script>
+  </body>
+</html>
