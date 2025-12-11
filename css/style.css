@@ -715,11 +715,13 @@ body {
   }
 
   .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
 
   .gallery-item {
-    max-width: 80%;
+   aspect-ratio: 1 / 1;
+    max-width: 100%;
   }
 }
 
