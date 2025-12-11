@@ -711,11 +711,11 @@ body {
 
 @media (max-width: 768px) {
   .gallery {
-    padding: 3rem 4%;
+    padding: 2rem 4%;
   }
 
   .gallery-container {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .gallery-item {
