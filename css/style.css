@@ -421,7 +421,6 @@ body {
 #menu {
   padding-top: 2.5rem;
   scroll-margin-top: 100px;
-  margin-bottom: 6rem;
 }
 
 .menu h2 {
@@ -507,9 +506,8 @@ body {
 .products {
   padding: 8rem 7% 2rem;
   background-color: #f3efe8;
-  margin-top: 30px;
+  margin-top: 25px;
   scroll-margin-top: 100px;
-  margin-bottom: 2rem;
 }
 
 .products h2 {
@@ -743,10 +741,9 @@ body {
 .menu,
 .products,
 .contact {
-  padding: 2rem 7% 1.4rem;
+  padding: 2.3rem 7% 1.4rem;
   background-color: #f3efe8;
   scroll-margin-top: 60px;
-  margin-bottom: 4rem;
 }
 
 .about h2,
