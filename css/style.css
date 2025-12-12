@@ -710,6 +710,16 @@ body {
   transform: scale(1.04);
 }
 
+@media (min-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-item {
+    max-width: 230px; /* ukuran yg kamu pakai sekarang */
+  }
+}
+
 @media (max-width: 768px) {
   .gallery {
     padding: 2rem 4%;
