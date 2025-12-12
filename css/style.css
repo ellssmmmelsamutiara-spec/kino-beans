@@ -509,6 +509,7 @@ body {
   background-color: #f3efe8;
   margin-top: 30px;
   scroll-margin-top: 100px;
+  margin-bottom: 2rem;
 }
 
 .products h2 {
@@ -742,7 +743,7 @@ body {
 .menu,
 .products,
 .contact {
-  padding: 2.5rem 7% 1.4rem;
+  padding: 2rem 7% 1.4rem;
   background-color: #f3efe8;
   scroll-margin-top: 60px;
   margin-bottom: 4rem;
