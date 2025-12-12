@@ -421,6 +421,7 @@ body {
 #menu {
   padding-top: 2.5rem;
   scroll-margin-top: 100px;
+  margin-bottom: 6rem;
 }
 
 .menu h2 {
@@ -744,6 +745,7 @@ body {
   padding: 2.2rem 7% 1.4rem;
   background-color: #f3efe8;
   scroll-margin-top: 60px;
+  margin-bottom: 6rem;
 }
 
 .about h2,
